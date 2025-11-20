@@ -3,27 +3,27 @@
 const newsData = [
     { 
         // Judul utama yang akan muncul di kartu berita.
-        title: "Mahasiswa Matematika Raih Emas ONMIPA 2025", 
+        title: "Prestasi Lomba Gema Ekonomi Syariah Kalimantan Barat", 
         // Tanggal publikasi berita.
-        date: "19 Nov 2025", 
+        date: "29 Juni 2024", 
         // URL gambar thumbnail (menggunakan placeholder).
-        img: "https://placehold.co/400x250/F59E0B/FFF?text=Prestasi",
+        img: "images/foto-berita2.jpeg",
         // Deskripsi singkat untuk preview di halaman depan.
-        desc: "Tim delegasi FMIPA berhasil menyapu bersih medali pada kategori Analisis Kompleks.",
+        desc: "Mahasiswa Sistem Informasi meraih juara 2 lomba Gebyar Kalbar 2024 dengan Tema Gema Ekonomi Syariah.",
         // Konten lengkap yang hanya muncul ketika modal dibuka.
-        fullContent: "Tim mahasiswa Program Studi Matematika FMIPA Universitas Tanjungpura kembali menorehkan prestasi gemilang di kancah nasional. Dalam ajang Olimpiade Nasional Matematika dan Ilmu Pengetahuan Alam (ONMIPA) 2025 yang diselenggarakan di Yogyakarta, tim delegasi berhasil menyapu bersih medali emas pada kategori Analisis Kompleks. Prestasi ini mengukuhkan posisi FMIPA sebagai pusat keunggulan dalam pendidikan sains dasar di Indonesia. Dekan FMIPA menyampaikan apresiasi setinggi-tingginya kepada para mahasiswa dan dosen pembimbing yang telah bekerja keras selama masa persiapan."
+        fullContent: "Selamat Atas Prestasinya Farahdiba Helwa Latifah Mahasiswa Sistem Informasi Angakatan 2021 yang telah meraih juara 2 lomba Gebyar Kalbar 2024 dengan Tema Gema Ekonomi Syariah."
     },
     { 
         // Judul berita kedua.
-        title: "Kuliah Umum: AI untuk Konservasi Laut", 
+        title: "Mahasiswa Universitas Tanjungpura Raih Prestasi dalam Kompetisi Indonesia Sharia Financial Olympiad (ISFO) 2025", 
         // Tanggal berita kedua.
         date: "17 Nov 2025", 
         // URL gambar berita kedua.
-        img: "https://placehold.co/400x250/D97706/FFF?text=Seminar+AI",
+        img: "images/foto-berita1.jpeg",
         // Deskripsi singkat berita kedua.
-        desc: "Prodi Ilmu Kelautan mengundang pakar dari Google Research untuk membahas peran AI.",
+        desc: "Tim mahasiswa Untan berhasil membuktikan bahwa semangat dan solidaritas mampu menembus batas disiplin ilmu dan mengantarkan pada prestasi gemilang.",
         // Konten lengkap berita kedua.
-        fullContent: "Program Studi Ilmu Kelautan mengadakan kuliah umum bertajuk 'Artificial Intelligence for Marine Conservation'. Acara ini menghadirkan pembicara tamu Dr. Alan Turing (bukan nama sebenarnya), seorang pakar AI dari Google Research. Dalam kuliahnya, beliau memaparkan bagaimana teknologi machine learning dapat digunakan untuk memantau kesehatan terumbu karang, melacak pergerakan spesies langka, dan mendeteksi aktivitas penangkapan ikan ilegal secara real-time menggunakan citra satelit."
+        fullContent: "Semangat juang dan kecerdasan intelektual mahasiswa Universitas Tanjungpura kembali menorehkan tinta emas di panggung nasional! Dalam ajang Indonesia Sharia Financial Olympiad (ISFO) 2025, kompetisi bergengsi yang diselenggarakan oleh Otoritas Jasa Keuangan (OJK) Indonesia pada 4 November 2025 di Kantor OJK Jawa Timur, Surabaya, tim mahasiswa Untan berhasil membuktikan bahwa semangat dan solidaritas mampu menembus batas disiplin ilmu dan mengantarkan pada prestasi gemilang."
     },
     { 
         // Judul berita ketiga.
