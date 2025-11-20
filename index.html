@@ -23,15 +23,20 @@
     </head>
     <body id="page-top">
         
-        <!-- Navbar -->
+        <!-- Navbar 
+        nav: Navigasi utama. 'fixed-top' membuatnya tetap di atas saat discroll.
+        -->
         <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
             <div class="container">
+                <!-- Logo -->   
                 <a class="navbar-brand" href="#page-top">
                     <i class="" style="color: var(--primary-vibrant);"></i>FMIPA Untan
                 </a>
+                <!-- Tombol Menu untuk Mobile (Hamburger Menu) -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
                     <i class="fas fa-bars" style="color: var(--primary-color);"></i>
                 </button>
+                <!-- Daftar Menu -->
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#sambutan">Sambutan</a></li>
@@ -44,11 +49,14 @@
             </div>
         </nav>
 
-        <!-- Hero Section -->
+        <!-- Hero Section
+        Header utama dengan judul besar dan animasi ketik.
+        -->
         <header class="masthead">
-            <div class="gradient-blob"></div>
+            <div class="gradient-blob"></div> <!-- Elemen dekorasi background -->
             <div class="container position-relative z-1">
                 <div class="row align-items-center">
+                    <!-- Kolom Kiri: Teks -->
                     <div class="col-lg-7">
                         <div class="badge bg-white text-dark border shadow-sm mb-3 px-3 py-2 rounded-pill fw-bold">
                             <i class="fas fa-star me-1" style="color: var(--primary-vibrant);"></i> Unggul & Berkarakter
@@ -57,17 +65,19 @@
                             Fakultas Matematika dan <br>
                             <span class="text-highlight">Ilmu Pengetahuan Alam</span>
                         </h1>
+                        <!-- Teks efek mesin tik akan muncul di sini via JS -->
                         <p class="lead text-muted mb-4" style="max-width: 500px; min-height: 2.3rem;" id="typing-text">
-                            <!-- JS will type here -->
                         </p>
                         <div class="d-flex gap-3">
                             <a class="btn btn-main" href="#prodi">Lihat Jurusan</a>
                             <a class="btn btn-outline-custom" href="#fasilitas">Cek Fasilitas</a>
                         </div>
                     </div>
+                    <!-- Kolom Kanan: Ikon Animasi (Hanya muncul di layar besar) -->
                     <div class="col-lg-5 d-none d-lg-block text-center">
                         <div style="position: relative;">
                              <i class="fas fa-dna fa-10x opacity-10" style="color: var(--primary-color); transform: rotate(-15deg);"></i>
+                            <!-- Ikon melayang -->
                              <i class="fas fa-flask fa-6x" style="color: var(--primary-vibrant); position: absolute; bottom: 0; right: 20px; filter: drop-shadow(0 10px 15px rgba(245,158,11,0.2)); animation: floatBlob 6s infinite reverse;"></i>
                         </div>
                     </div>
@@ -75,7 +85,9 @@
             </div>
         </header>
 
-        <!-- Marquee Text -->
+        <!-- Marquee Text 
+             Teks Berjalan 
+        -->
         <div class="marquee-container">
             <div class="marquee-content">
                 MATEMATIKA &bull; BIOLOGI &bull; KIMIA &bull; GEOFISIKA &bull; ILMU KELAUTAN &bull; STATISTIKA &bull; SISTEM INFORMASI &bull; REKAYASA SISTEM KOMPUTER &bull; FISIKA &bull;
@@ -83,7 +95,9 @@
             </div>
         </div>
 
-        <!-- Sambutan Dekan -->
+        <!-- Sambutan Dekan 
+             Menggunakan grid 2 kolom 
+        -->
         <section class="page-section" id="sambutan">
             <div class="container">
                 <div class="row align-items-center">
