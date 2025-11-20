@@ -27,15 +27,15 @@ const newsData = [
     },
     { 
         // Judul berita ketiga.
-        title: "Peresmian Laboratorium Robotika Baru", 
+        title: "Selamat & Sukses Mahasiswa Kimia Lulus Program Beasiswa Berprestasi Djarum Beasiswa Plus", 
         // Tanggal berita ketiga.
         date: "14 Nov 2025", 
         // URL gambar berita ketiga.
-        img: "https://placehold.co/400x250/1F2937/FFF?text=Lab+Robotik",
+        img: "images/foto-berita3.png",
         // Deskripsi singkat berita ketiga.
-        desc: "Fasilitas terbaru untuk menunjang prodi Rekayasa Sistem Komputer telah siap digunakan.",
+        desc: "Penerima Djarum Beasiswa Plus Program Beasiswa Berprestasi.",
         // Konten lengkap berita ketiga.
-        fullContent: "Fakultas MIPA resmi membuka Laboratorium Robotika dan Sistem Tertanam (Embedded Systems) yang baru. Fasilitas seluas 200 meter persegi ini dilengkapi dengan peralatan mutakhir seperti lengan robot industri, kit pengembangan IoT, dan printer 3D. Laboratorium ini diharapkan dapat menjadi inkubator bagi inovasi mahasiswa Program Studi Rekayasa Sistem Komputer dalam mengembangkan solusi teknologi tepat guna."
+        fullContent: "Segenap Civitas Akademika FMIPA Untan mengucapkan Selamat dan Sukses atas prestasi yang telah diraih Septy Aurelia Sherent (Kimia 2022) sebagai Penerima Djarum Beasiswa Plus Program Beasiswa Berprestasi✨ Semoga apa yang telah dicapai dapat bermanfaat dan menjadi motivasi bagi mahasiswa lainnya serta menjadi langkah awal untuk mencapai prestasi prestasi lainnya🥰✨"
     }
 ];
 
