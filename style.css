@@ -1,123 +1,187 @@
+/* :root menyimpan variabel global agar warna dan nilai styling mudah dikelola di satu tempat. */
 :root {
+    /* --- PALET WARNA (TEMA WHITE & GOLD) --- */
+    
+    /* Warna Background Utama */
     --bg-body: #FFFFFF;
+    /* Warna Background Sekunder (untuk variasi halus) */
     --bg-secondary: #FFFBEB;
     
+    /* Warna Utama: Kuning Emas Tua (untuk Teks/Border agar kontras dan terbaca) */
     --primary-color: #D97706;
+    /* Warna Aksen: Kuning Emas Cerah (untuk Tombol/Ikon agar menarik perhatian) */
     --primary-vibrant: #F59E0B;
     
-    --bg-card: rgba(255, 255, 255, 0.9); 
+    /* Warna Glassmorphism: Transparansi putih untuk efek kaca */
+    --bg-card: rgba(255, 255, 255, 0.9);
     
+    /* Warna Teks Utama (Abu-abu Gelap, bukan hitam pekat agar mata nyaman) */
     --text-main: #1F2937;
+    /* Warna Teks Sekunder (Abu-abu sedang untuk deskripsi) */
     --text-muted: #6B7280;
     
-    --shadow-soft: 0 10px 40px -10px rgba(217, 119, 6, 0.15); 
+    /* Efek Bayangan Halus (Soft Shadow) berwarna keemasan */
+    --shadow-soft: 0 10px 40px -10px rgba(217, 119, 6, 0.15);
+    /* Efek Cahaya (Glow) */
     --glow: 0 0 15px rgba(245, 158, 11, 0.3);
 }
 
+/* Styling dasar untuk seluruh halaman body */
 body {
+    /* Menggunakan warna background dari variabel */
     background-color: var(--bg-body);
+    /* Mengatur warna teks default */
     color: var(--text-main);
+    /* Mengatur jenis font utama */
     font-family: 'Inter', sans-serif;
+    /* Mencegah munculnya scrollbar horizontal jika ada elemen yang melebar */
     overflow-x: hidden;
 }
 
+/* --- TYPOGRAPHY --- */
+/* Mengatur font khusus untuk semua judul (Headings) dan elemen penting lainnya */
 h1, h2, h3, h4, h5, h6, .navbar-brand, .section-heading {
     font-family: 'Space Grotesk', sans-serif;
+    /* Merapatkan jarak antar huruf sedikit agar terlihat modern */
     letter-spacing: -0.02em;
     color: var(--text-main);
 }
 
+/* --- NAVBAR (Menu Navigasi) --- */
 #mainNav {
+    /* Memberi jarak vertikal pada navbar */
     padding: 1rem 0;
+    /* Transisi halus untuk perubahan background saat discroll (diatur via JS) */
     transition: all 0.3s ease;
+    /* Warna background putih dengan sedikit transparansi (95%) */
     background: rgba(255, 255, 255, 0.95);
+    /* Efek blur di belakang navbar (seperti kaca buram/frosted glass) */
     backdrop-filter: blur(10px);
+    /* Garis tipis di bawah navbar sebagai pemisah */
     border-bottom: 1px solid rgba(245, 158, 11, 0.15);
+    /* Bayangan tipis di bawah navbar */
     box-shadow: 0 2px 15px rgba(0,0,0,0.03);
 }
+/* Styling Logo/Nama Website di Navbar */
 .navbar-brand {
+    /* Menebalkan font */
     font-weight: 800;
+    /* Memaksa warna menggunakan variabel primary */
     color: var(--primary-color) !important;
     font-size: 1.5rem;
 }
+/* Styling Link Menu (Sambutan, Prodi, dll) */
 .nav-link {
+    /* Warna teks menu (abu-abu) */
     color: var(--text-muted) !important;
     font-weight: 600;
     font-size: 0.95rem;
+    /* Jarak antar menu */
     margin: 0 8px;
+    /* Transisi warna saat cursor diarahkan */
     transition: color 0.3s;
 }
+/* Efek saat link menu disorot (hover) atau sedang aktif */
 .nav-link:hover, .nav-link.active {
     color: var(--primary-vibrant) !important;
 }
+/* Tombol menu hamburger pada tampilan mobile */
 .navbar-toggler {
     border: none;
     color: var(--primary-color);
 }
 
+/* --- HERO SECTION (Banner Utama) --- */
 .masthead {
+    /* Posisi relative agar elemen anak (seperti blob) bisa diposisikan absolute terhadap section ini */
     position: relative;
+    /* Padding atas besar untuk kompensasi navbar yang fixed */
     padding-top: 10rem;
     padding-bottom: 6rem;
+    /* Menyembunyikan elemen dekorasi yang keluar dari area section */
     overflow: hidden;
     text-align: left;
+    /* Gradasi background halus dari putih ke kuning sangat muda */
     background: linear-gradient(to bottom, #fff, var(--bg-secondary));
 }
 
+/* --- ANIMASI BLOB (Bulatan Background) --- */
 .gradient-blob {
+    /* Posisi absolute agar bisa ditaruh di belakang teks */
     position: absolute;
     top: -20%;
     right: -10%;
+    /* Ukuran blob */
     width: 600px;
     height: 600px;
+    /* Membuat gradasi radial (lingkaran) transparan */
     background: radial-gradient(circle, rgba(245, 158, 11, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+    /* Membuat bentuk menjadi lingkaran sempurna */
     border-radius: 50%;
+    /* Menaruh elemen di layer paling belakang */
     z-index: 0;
+    /* Menjalankan animasi 'floatBlob' */
     animation: floatBlob 10s infinite alternate ease-in-out;
 }
 
+/* Definisi Animasi Gerakan Blob */
 @keyframes floatBlob {
+    /* Posisi awal */
     0% { transform: translate(0, 0); }
+    /* Posisi tengah (gerak ke kiri sedikit & turun) */
     50% { transform: translate(-30px, 50px); }
+    /* Posisi akhir (kembali ke asal) */
     100% { transform: translate(0, 0); }
 }
 
+/* Definisi Animasi Mengambang Vertikal */
 @keyframes floating {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-20px); }
     100% { transform: translateY(0px); }
 }
 
-
+/* Judul Besar di Hero Section */
 .masthead-heading {
     font-size: 3.5rem;
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: 1.5rem;
     color: var(--text-main);
+    /* Memastikan teks berada di atas blob background */
     position: relative; z-index: 1;
 }
+/* Styling Highlight Teks (Stabilo Effect) */
 .text-highlight {
     color: var(--primary-color);
+    /* Membuat efek garis bawah tebal seperti stabilo */
     background: linear-gradient(120deg, transparent 0%, transparent 60%, rgba(245, 158, 11, 0.2) 60%);
 }
 
+/* --- BUTTONS (Tombol) --- */
+/* Tombol Utama (Solid) */
 .btn-main {
     background-color: var(--primary-vibrant);
     color: #fff;
+    /* Membuat tombol berbentuk kapsul */
     border-radius: 50px;
     padding: 12px 35px;
     font-weight: 700;
     border: none;
+    /* Memberikan bayangan agar tombol terlihat timbul */
     box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
     transition: all 0.3s;
 }
+/* Efek Hover Tombol Utama */
 .btn-main:hover {
+    /* Tombol naik sedikit ke atas */
     transform: translateY(-2px);
     background-color: var(--primary-color);
     color: #fff;
+    /* Bayangan membesar */
     box-shadow: 0 8px 20px rgba(245, 158, 11, 0.4);
 }
+/* Tombol Garis Tepi (Outline) */
 .btn-outline-custom {
     border: 2px solid var(--primary-color);
     color: var(--primary-color);
@@ -127,11 +191,13 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .section-heading {
     background: transparent;
     transition: all 0.3s;
 }
+/* Efek Hover Tombol Outline */
 .btn-outline-custom:hover {
     background-color: var(--primary-color);
     color: #fff;
 }
 
+/* Tombol 'Baca Selengkapnya' (Kecil) */
 .btn-read-more {
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
@@ -147,8 +213,13 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .section-heading {
     color: #fff;
 }
 
-.page-section { padding: 5rem 0; }
+/* --- LAYOUT SECTIONS --- */
+.page-section { 
+    /* Padding vertikal yang konsisten antar section */
+    padding: 5rem 0; 
+}
 
+/* Judul Section Tengah */
 .section-heading {
     text-align: center;
     margin-bottom: 3.5rem;
@@ -156,33 +227,42 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .section-heading {
     font-size: 2.5rem;
     color: var(--text-main);
 }
+/* Garis bawah pada kata tertentu di judul section */
 .section-heading span {
     color: var(--primary-color);
     border-bottom: 3px solid var(--primary-vibrant);
 }
 
+/* --- KARTU GLASSMORPHISM (Transparan) --- */
 .glass-card {
     background: #fff;
+    /* Garis tepi tipis transparan */
     border: 1px solid rgba(245, 158, 11, 0.1);
     border-radius: 24px;
     padding: 2rem;
     height: 100%;
+    /* Transisi halus untuk efek hover */
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
     overflow: hidden;
     box-shadow: var(--shadow-soft);
 }
+/* Efek saat kartu disorot mouse */
 .glass-card:hover {
+    /* Kartu naik ke atas */
     transform: translateY(-10px);
+    /* Bayangan makin besar */
     box-shadow: 0 20px 40px -10px rgba(245, 158, 11, 0.2);
     border-color: var(--primary-vibrant);
 }
 
+/* Ikon Bulat di dalam Kartu */
 .card-icon {
     width: 70px;
     height: 70px;
     background: var(--bg-secondary);
     border-radius: 50%;
+    /* Flexbox untuk menengahkan ikon font-awesome */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -191,9 +271,11 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .section-heading {
     font-size: 1.8rem;
     transition: 0.3s;
 }
+/* Efek ikon saat kartu induknya di-hover */
 .glass-card:hover .card-icon {
     background: var(--primary-vibrant);
     color: #fff;
+    /* Memutar ikon 15 derajat dan memperbesarnya */
     transform: rotate(15deg) scale(1.1);
 }
 
@@ -203,48 +285,67 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .section-heading {
     color: var(--text-main);
 }
 
+/* --- KARTU FASILITAS (Gambar) --- */
 .facility-card {
     border-radius: 20px;
     overflow: hidden;
     position: relative;
     height: 250px;
     box-shadow: var(--shadow-soft);
+    /* Mengubah kursor menjadi tangan (pointer) */
     cursor: pointer;
 }
 .facility-card img {
     width: 100%;
     height: 100%;
+    /* Memastikan gambar memenuhi kotak tanpa gepeng (crop) */
     object-fit: cover;
     transition: 0.5s;
 }
-.facility-card:hover img { transform: scale(1.1); }
+/* Zoom gambar saat di-hover */
+.facility-card:hover img { 
+    transform: scale(1.1); 
+}
+
+/* Overlay Gradasi Hitam di atas gambar fasilitas */
 .facility-overlay {
     position: absolute;
     bottom: 0;
     left: 0; right: 0;
+    /* Gradasi dari hitam transparan ke bening (agar teks terbaca) */
     background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); 
     padding: 20px;
     color: white;
+    /* Mencegah overlay menghalangi klik mouse pada elemen di bawahnya */
     pointer-events: none;
 }
-.facility-overlay h5 { color: #FCD34D; font-weight: 700; }
+.facility-overlay h5 { 
+    color: #FCD34D; 
+    font-weight: 700; 
+}
 
+/* --- FOTO DEKAN --- */
 .dean-img {
     border-radius: 24px;
     width: 100%;
     object-fit: cover;
+    /* Efek bayangan solid (tidak blur) di belakang foto */
     box-shadow: 20px 20px 0px var(--bg-secondary);
     border: 1px solid rgba(0,0,0,0.05);
 }
 
+/* --- MARQUEE (Teks Berjalan) --- */
 .marquee-container {
     background: var(--primary-vibrant);
     color: #fff;
     padding: 15px 0;
     overflow: hidden;
+    /* Mencegah teks turun ke baris baru */
     white-space: nowrap;
     position: relative;
+    /* Memiringkan container -1 derajat agar estetik */
     transform: rotate(-1deg);
+    /* Melebarkan container agar tidak ada celah putih saat dimiringkan */
     width: 102%;
     left: -1%;
     margin: 3rem 0;
@@ -256,36 +357,48 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .section-heading {
 }
 .marquee-content {
     display: inline-block;
+    /* Menjalankan animasi berjalan tanpa henti */
     animation: marquee 30s linear infinite;
 }
+/* Definisi Animasi Teks Berjalan */
 @keyframes marquee {
     0% { transform: translateX(0); }
+    /* Menggeser teks ke kiri sejauh 50% dari panjangnya */
     100% { transform: translateX(-50%); }
 }
 
+/* --- TESTIMONI --- */
 .testimonial-card {
     background: #fff;
     border: 1px solid rgba(0,0,0,0.05);
+    /* Memberikan aksen garis tebal warna oranye di sebelah kiri */
     border-left: 5px solid var(--primary-vibrant);
     padding: 2rem;
+    /* Membulatkan sudut kanan saja */
     border-radius: 0 20px 20px 0;
     box-shadow: var(--shadow-soft);
     height: 100%;
 }
 
+/* --- PENGUMUMAN (Scrollable) --- */
 .announcement-list {
+    /* Membatasi tinggi maksimal box pengumuman */
     max-height: 300px;
+    /* Jika konten melebihi tinggi, munculkan scrollbar vertikal */
     overflow-y: auto;
     padding-right: 5px;
 }
+/* Kustomisasi Scrollbar (Webkit browsers: Chrome, Safari, Edge) */
 .announcement-list::-webkit-scrollbar {
     width: 5px;
 }
+/* Warna batang scrollbar */
 .announcement-list::-webkit-scrollbar-thumb {
     background-color: #e5e7eb;
     border-radius: 10px;
 }
 
+/* --- FOOTER --- */
 footer {
     background-color: #fff;
     padding: 4rem 0 2rem;
@@ -293,26 +406,33 @@ footer {
     color: var(--text-main);
 }
 
+/* --- MODAL STYLING --- */
 .modal-content {
     border-radius: 24px;
     border: none;
 }
+/* Garis pembatas header modal */
 .modal-header { border-bottom: 1px solid #f3f4f6; }
 
+/* Styling untuk gambar preview di dalam modal */
 #imagePreview {
     width: 100%;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
+/* --- FORM ELEMENTS (Helper) --- */
 .form-control {
     border-radius: 15px;
     padding: 0.8rem 1rem;
     border: 1px solid #e5e7eb;
 }
+/* Efek saat input form diklik/fokus */
 .form-control:focus {
     border-color: var(--primary-vibrant);
+    /* Efek ring (cincin) cahaya di sekeliling input */
     box-shadow: 0 0 0 0.25rem rgba(245, 158, 11, 0.2);
 }
 
+/* Utility Class Warna Abu-abu */
 .text-gray { color: var(--text-muted) !important; }
