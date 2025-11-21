@@ -8,36 +8,26 @@
         <title>FMIPA Untan</title>
         <link rel="icon" type="image/png" href="images/foto-untan.png" />
         
-        <!-- Font Awesome -->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         
-        <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
         
-        <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Link ke CSS Eksternal -->
         <link href="style.css" rel="stylesheet">
     </head>
     <body id="page-top">
         
-        <!-- Navbar 
-        nav: Navigasi utama. 'fixed-top' membuatnya tetap di atas saat discroll.
-        -->
         <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
             <div class="container">
-                <!-- Logo -->   
                 <a class="navbar-brand" href="#page-top">
                     <i class="" style="color: var(--primary-vibrant);"></i>FMIPA Untan
                 </a>
-                <!-- Tombol Menu untuk Mobile (Hamburger Menu) -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
                     <i class="fas fa-bars" style="color: var(--primary-color);"></i>
                 </button>
-                <!-- Daftar Menu -->
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#sambutan">Sambutan</a></li>
@@ -50,14 +40,10 @@
             </div>
         </nav>
 
-        <!-- Hero Section
-        Header utama dengan judul besar dan animasi ketik.
-        -->
         <header class="masthead">
-            <div class="gradient-blob"></div> <!-- Elemen dekorasi background -->
+            <div class="gradient-blob"></div>
             <div class="container position-relative z-1">
                 <div class="row align-items-center">
-                    <!-- Kolom Kiri: Teks -->
                     <div class="col-lg-7">
                         <div class="badge bg-white text-dark border shadow-sm mb-3 px-3 py-2 rounded-pill fw-bold">
                             <i class="fas fa-star me-1" style="color: var(--primary-vibrant);"></i> Unggul & Berkarakter
@@ -66,7 +52,6 @@
                             Fakultas Matematika dan <br>
                             <span class="text-highlight">Ilmu Pengetahuan Alam</span>
                         </h1>
-                        <!-- Teks efek mesin tik akan muncul di sini via JS -->
                         <p class="lead text-muted mb-4" style="max-width: 500px; min-height: 2.3rem;" id="typing-text">
                         </p>
                         <div class="d-flex gap-3">
@@ -74,11 +59,9 @@
                             <a class="btn btn-outline-custom" href="#fasilitas">Cek Fasilitas</a>
                         </div>
                     </div>
-                    <!-- Kolom Kanan: Ikon Animasi (Hanya muncul di layar besar) -->
                     <div class="col-lg-5 d-none d-lg-block text-center">
                         <div style="position: relative;">
                              <i class="fas fa-dna fa-10x opacity-10" style="color: var(--primary-color); transform: rotate(-15deg);"></i>
-                            <!-- Ikon melayang -->
                              <i class="fas fa-flask fa-6x" style="color: var(--primary-vibrant); position: absolute; bottom: 0; right: 20px; filter: drop-shadow(0 10px 15px rgba(245,158,11,0.2)); animation: floatBlob 6s infinite reverse;"></i>
                         </div>
                     </div>
@@ -86,9 +69,6 @@
             </div>
         </header>
 
-        <!-- Marquee Text 
-             Teks Berjalan 
-        -->
         <div class="marquee-container">
             <div class="marquee-content">
                 MATEMATIKA &bull; BIOLOGI &bull; KIMIA &bull; GEOFISIKA &bull; ILMU KELAUTAN &bull; STATISTIKA &bull; SISTEM INFORMASI &bull; REKAYASA SISTEM KOMPUTER &bull; FISIKA &bull;
@@ -99,9 +79,6 @@
             </div>
         </div>
 
-        <!-- Sambutan Dekan 
-             Menggunakan grid 2 kolom 
-        -->
         <section class="page-section" id="sambutan">
             <div class="container">
                 <div class="row align-items-center">
@@ -112,20 +89,18 @@
                         <h2 class="fw-bold mb-2" style="color: var(--primary-color);">Sambutan Dekan</h2>
                         <h4 class="text-muted mb-4">Prof. Dr. Gusrizal, S.Si., M.Si.</h4>
                         <p class="text-muted lead" style="text-align:justify;">
-                            Assalaamu’alaikum wr. wb.<br> Selamat datang di website resmi Fakultas Matematika dan Ilmu Pengetahuan Alam Universitas Tanjungpura (FMIPA Untan) Pontianak. Pada awal berdirinya tahun 2002, FMIPA Untan bernama Fakultas Matematika dan Ilmu Pengetahuan Alam (Persiapan). Ketika pertama kali menerima mahasiswa pada tahun akademik 2002/2003 , FMIPA Untan menyelenggarakan proses pembelajaran pada empat program studi jenjang S-1 yaitu Matematika, Fisika, Kimia, dan Biologi. Saat ini FMIPA Untan menyelenggarakan sembilan program studi jenjang S-1 (Matematika, Fisika, Kimia, Biologi, Rekayasa Sistem Komputer, Ilmu Kelautan, Sistem Informasi, Statistik, Geofisika). dan satu program studi jenjang S-2 (Kimia).  Website ini dikembangkan guna memenuhi kebutuhan internal sekaligus sebagai media informasi kegiatan FMIPA bagi masyarakat, stakeholders, mahasiswa, orangtua mahasiswa, dan masyarakat profesi. Informasi mengenai sejarah, profil, layanan akademik, kerja sama, program yang ditawarkan serta aktivitas lainnya dapat ditelusuri pada website ini. FMIPA Untan Mempunyai visi untuk “Menjadi institusi unggul dalam tranformasi, pengembangan dan penyebarluasan sains dan teknologi berbasi lingkungan tropis dengan luaran berdaya saing global”. Sebagai wujud kepedulian FMIPA Untan terhadap tujuan pembangunan nasional, FMIPA Untan terus berupaya melakukan evaluasi, pengembangan, dan pembaruan untuk merespon kebutuhan stakeholders. FMIPA Untan selalu terus mengembangkan dirinya dan melakukan perbaikan dalam berbagai sisi sesuai Komitmen kami untuk menjadikan “QUALITY IS OUR CONCERN” Dengan senang hati kami menerima komentar, saran, dan kerja sama guna perbaikan secara berkesinambungan dalam upaya berkontribusi dalam pengembangan riset dan pengetahuan di Indonesia.<br>Wassalaamu’alaikum wr. wb.
+                            Assalaamu'alaikum wr. wb.<br> Selamat datang di website resmi Fakultas Matematika dan Ilmu Pengetahuan Alam Universitas Tanjungpura (FMIPA Untan) Pontianak. Pada awal berdirinya tahun 2002, FMIPA Untan bernama Fakultas Matematika dan Ilmu Pengetahuan Alam (Persiapan). Ketika pertama kali menerima mahasiswa pada tahun akademik 2002/2003 , FMIPA Untan menyelenggarakan proses pembelajaran pada empat program studi jenjang S-1 yaitu Matematika, Fisika, Kimia, dan Biologi. Saat ini FMIPA Untan menyelenggarakan sembilan program studi jenjang S-1 (Matematika, Fisika, Kimia, Biologi, Rekayasa Sistem Komputer, Ilmu Kelautan, Sistem Informasi, Statistik, Geofisika). dan satu program studi jenjang S-2 (Kimia).  Website ini dikembangkan guna memenuhi kebutuhan internal sekaligus sebagai media informasi kegiatan FMIPA bagi masyarakat, stakeholders, mahasiswa, orangtua mahasiswa, dan masyarakat profesi. Informasi mengenai sejarah, profil, layanan akademik, kerja sama, program yang ditawarkan serta aktivitas lainnya dapat ditelusuri pada website ini. FMIPA Untan Mempunyai visi untuk "Menjadi institusi unggul dalam tranformasi, pengembangan dan penyebarluasan sains dan teknologi berbasi lingkungan tropis dengan luaran berdaya saing global". Sebagai wujud kepedulian FMIPA Untan terhadap tujuan pembangunan nasional, FMIPA Untan terus berupaya melakukan evaluasi, pengembangan, dan pembaruan untuk merespon kebutuhan stakeholders. FMIPA Untan selalu terus mengembangkan dirinya dan melakukan perbaikan dalam berbagai sisi sesuai Komitmen kami untuk menjadikan "QUALITY IS OUR CONCERN" Dengan senang hati kami menerima komentar, saran, dan kerja sama guna perbaikan secara berkesinambungan dalam upaya berkontribusi dalam pengembangan riset dan pengetahuan di Indonesia.<br>Wassalaamu'alaikum wr. wb.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Daftar 9 Prodi -->
         <section class="page-section" id="prodi" style="background-color: #fafafa;">
             <div class="container">
                 <h2 class="section-heading">Daftar <span>Jurusan</span></h2>
                 
                 <div class="row g-4">
-                    <!-- 1. Matematika -->
                     <div class="col-md-6 col-lg-4">
                         <div class="glass-card text-center">
                             <div class="card-icon"><i class="fas fa-calculator"></i></div>
@@ -134,7 +109,6 @@
                             <button class="btn btn-sm btn-outline-custom rounded-pill mt-3" onclick="updateModal('Matematika', 'Aktuaris, Data Analyst')">Detail</button>
                         </div>
                     </div>
-                    <!-- 2. Biologi -->
                     <div class="col-md-6 col-lg-4">
                         <div class="glass-card text-center">
                             <div class="card-icon"><i class="fas fa-leaf"></i></div>
@@ -143,7 +117,6 @@
                             <button class="btn btn-sm btn-outline-custom rounded-pill mt-3" onclick="updateModal('Biologi', 'Peneliti, Konsultan')">Detail</button>
                         </div>
                     </div>
-                    <!-- 3. Kimia -->
                     <div class="col-md-6 col-lg-4">
                         <div class="glass-card text-center">
                             <div class="card-icon"><i class="fas fa-flask"></i></div>
@@ -152,7 +125,6 @@
                             <button class="btn btn-sm btn-outline-custom rounded-pill mt-3" onclick="updateModal('Kimia', 'QC, R&D')">Detail</button>
                         </div>
                     </div>
-                    <!-- 4. Geofisika -->
                     <div class="col-md-6 col-lg-4">
                         <div class="glass-card text-center">
                             <div class="card-icon"><i class="fas fa-mountain"></i></div>
@@ -161,7 +133,6 @@
                             <button class="btn btn-sm btn-outline-custom rounded-pill mt-3" onclick="updateModal('Geofisika', 'Pertambangan')">Detail</button>
                         </div>
                     </div>
-                    <!-- 5. Ilmu Kelautan -->
                     <div class="col-md-6 col-lg-4">
                         <div class="glass-card text-center">
                             <div class="card-icon"><i class="fas fa-water"></i></div>
@@ -170,7 +141,6 @@
                             <button class="btn btn-sm btn-outline-custom rounded-pill mt-3" onclick="updateModal('Ilmu Kelautan', 'Konservasi')">Detail</button>
                         </div>
                     </div>
-                    <!-- 6. Statistika -->
                     <div class="col-md-6 col-lg-4">
                         <div class="glass-card text-center">
                             <div class="card-icon"><i class="fas fa-chart-pie"></i></div>
@@ -179,7 +149,6 @@
                             <button class="btn btn-sm btn-outline-custom rounded-pill mt-3" onclick="updateModal('Statistika', 'Data Scientist')">Detail</button>
                         </div>
                     </div>
-                    <!-- 7. Sistem Informasi -->
                     <div class="col-md-6 col-lg-4">
                         <div class="glass-card text-center">
                             <div class="card-icon"><i class="fas fa-database"></i></div>
@@ -188,7 +157,6 @@
                             <button class="btn btn-sm btn-outline-custom rounded-pill mt-3" onclick="updateModal('Sistem Informasi', 'System Analyst')">Detail</button>
                         </div>
                     </div>
-                    <!-- 8. Rekayasa Sistem Komputer -->
                     <div class="col-md-6 col-lg-4">
                         <div class="glass-card text-center">
                             <div class="card-icon"><i class="fas fa-microchip"></i></div>
@@ -197,7 +165,6 @@
                             <button class="btn btn-sm btn-outline-custom rounded-pill mt-3" onclick="updateModal('Rekayasa Sistem Komputer', 'IoT Engineer')">Detail</button>
                         </div>
                     </div>
-                    <!-- 9. Fisika -->
                     <div class="col-md-6 col-lg-4">
                         <div class="glass-card text-center">
                             <div class="card-icon"><i class="fas fa-atom"></i></div>
@@ -210,7 +177,6 @@
             </div>
         </section>
 
-        <!-- Fasilitas Section -->
         <section class="page-section" id="fasilitas">
             <div class="container">
                 <h2 class="section-heading">Fasilitas <span>Unggulan</span></h2>
@@ -246,19 +212,15 @@
             </div>
         </section>
 
-        <!-- Berita & Pengumuman -->
         <section class="page-section bg-light" id="berita">
             <div class="container">
                 <div class="row">
-                    <!-- Kolom Berita -->
                     <div class="col-lg-8">
                         <h3 class="fw-bold mb-4 text-start">Berita <span style="color: var(--primary-vibrant);">Terkini</span></h3>
                         <div class="row g-3" id="news-container">
-                            <!-- Javascript akan mengisi berita di sini -->
                         </div>
                     </div>
 
-                    <!-- Kolom Pengumuman (Scrollable) -->
                     <div class="col-lg-4 mt-5 mt-lg-0">
                         <div class="glass-card p-4" style="background: #fff; border-top: 5px solid var(--primary-vibrant); border-radius: 10px; max-height: 500px;">
                             <h4 class="fw-bold mb-3"><i class="fas fa-bullhorn me-2" style="color: var(--primary-color);"></i> Pengumuman</h4>
@@ -293,7 +255,6 @@
             </div>
         </section>
 
-        <!-- Testimoni -->
         <section class="page-section" id="testimoni">
             <div class="container">
                 <h2 class="section-heading">Kata <span>Mereka</span></h2>
@@ -339,7 +300,6 @@
             </div>
         </section>
 
-        <!-- Footer (Newsletter Removed) -->
         <footer id="contact">
             <div class="container">
                 <div class="row g-4">
@@ -392,7 +352,6 @@
             </div>
         </footer>
 
-        <!-- Modal Common (Detail Jurusan - Tanpa Tombol Daftar) -->
         <div class="modal fade" id="modalCommon" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -413,7 +372,6 @@
             </div>
         </div>
 
-        <!-- Modal Preview Gambar -->
         <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content bg-transparent border-0 shadow-none">
@@ -426,7 +384,6 @@
             </div>
         </div>
 
-        <!-- Modal Detail Berita -->
         <div class="modal fade" id="newsModal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
@@ -446,11 +403,9 @@
             </div>
         </div>
 
-        <!-- Scripts -->
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         
-        <!-- Link ke JS Eksternal -->
         <script src="script.js"></script>
     </body>
 </html>
